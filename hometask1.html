@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header {
+            height: 100px;
+            width: 100%;
+            background-color: aqua;
+        }
+        #inside_header {
+            position: relative;
+            left: 20%;
+            top: 20px;
+            background-color: white;
+            height: 60px;
+            width: 600px;
+            text-align: center;
+        }
+        #second_header {
+            height: 80px;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #select_category {
+            float: left;
+            margin-left: -100px;
+        }
+        #All_News {
+            font-size: 30px;
+            float: left;
+        }
+        #subscribe {
+            float: left;
+        }
+        #third_header {
+            height: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+        }
+        #red_box {
+
+            height: 160px;
+            width: 240px;
+            background-color: red;
+
+            margin-top: 20px;
+
+        }
+        #content_box {
+            margin-top: 10px;
+            height: 140px;
+            width: 100%;
+        }
+        .button {
+            position: relative;
+            top: 10px;
+        }
+        @media screen and (max-width:768px) {
+            #inside_header {
+                height: 60px;
+                width: 400px;
+            }
+            #second_header {
+                height: 80px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 100px;
+            }
+            #select_category {
+                position: relative;
+                top: -10 px;
+                left: 90px;
+            }
+            #All_News {
+                position: relative;
+                left: 30px;
+                display: inline;
+                flex-direction: row;
+            }
+            #red_box {
+                height: 160px;
+                width: 160px;
+                background-color: red;
+                /* margin-top: 10px; */
+            }
+            #content_box {
+                margin-top: px;
+                height: 160px;
+                width: 100%;
+            }
+
+            .button {
+                top: -5px;
+            }
+
+            #inside_header {
+                position: relative;
+                left: 150px;
+            }
+        }
+        @media screen and (max-width:500px) {
+            #inside_header {
+                height: 60px;
+                width: 250px;
+                position: relative;
+                left: 20%;
+            }
+            #second_header {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 90px;
+            }
+            #All_News {
+                font-size: 20px;
+            }
+            #email {
+                width: 35px;
+            }
+            #red_box {
+                position: relative;
+                margin-top: 180px;
+                height: 250px;
+                width: 160px;
+                background-color: red;
+            }
+            #content_box {
+                position: relative;
+                margin-top: 80px;
+                height: 160px;
+                width: 60%;
+            }
+            #third_header {
+                position: relative;
+                top: -80px;
+                margin-top: 10px;
+                height: 250px;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width:400px) {
+            #inside_header {
+                right: 5%;
+            }
+            #second_header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 80px;
+            }
+            #third_header {
+                position: relative;
+                /* top: -80px; */
+                margin-top: 5px;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                height: 300px;
+                width: 100%;
+            }
+            #red_box {
+                /* position: relative; */
+                /* margin-top: 120px; */
+                height: 280px;
+            }
+            #content_box {
+                /* position: relative; */
+                margin-bottom: 20px;
+            }
+
+        }
+
+        @media screen and (max-width:350px) {
+            #inside_header {
+                width: 150px;
+                align-items: center;
+            }
+            #second_header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2px;
+            }
+            #third_header {
+                height: 350px;
+                position: relative;
+                top: -110px
+            }
+            #red_box {
+                height: 350px;
+                position: relative;
+                top: 40px;
+            }
+            #All_News {
+                font-size: 20px;
+                position: relative;
+                left: 40px;
+            }
+            #select_category {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+</style>
+
+<body>
+    <div id="header">
+        <div id="inside_header">
+            <p style="font-size: 20px; "><b>News Blog</b></p>
+            world wide web
+        </div>
+    </div>
+    <div id="second_header">
+        <div id="select_category">Select category<br>
+            <select name="">
+                <option value="">All</option>
+                <option value="">None</option>
+            </select>
+        </div>
+        <div id="All_News">All News</div>
+
+        <div id="subscribe">Subscribe<br>
+            <input type="text" id="email" placeholder="email address"><button
+                style="color: white;background-color: black;">Subscribe</button>
+
+        </div>
+    </div>
+
+    <hr>
+    <div id="third_header">
+        <div id="red_box"></div>
+        <div id="content_box">
+            <label style="color: blue; font-size: 20px;">Title One</label>
+
+            <p id="date">posted on 29 june , 2019 // category, category One </p>
+            <p id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit saepe error nisi quisquam
+                porro et fugiat
+                eaque officiis quaerat mollitia cupiditate voluptatum dolorum, iste est quibusdam repellendus commodi
+                voluptatibus pariatur.</p>
+            <button class="button" style="color: white;background-color: red; ">continue reading</button>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+    <div id="third_header">
+        <div id="red_box"></div>
+        <div id="content_box">
+            <label style="color: blue; font-size: 20px;">Title One</label>
+            <p id="date">posted on 29 june , 2019 // category, category One </p>
+            <p id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit saepe error nisi quisquam
+                porro et fugiat
+                eaque officiis quaerat mollitia cupiditate voluptatum dolorum, iste est quibusdam repellendus commodi
+                voluptatibus pariatur.</p>
+            <button class="button" style="color: white;background-color: red; ">continue reading</button>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <div id="third_header">
+        <div id="red_box"></div>
+        <div id="content_box">
+            <label style="color: blue; font-size: 20px;">Title One</label>
+            <p id="date">posted on 29 june , 2019 // category, category One </p>
+            <p id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit saepe error nisi quisquam
+                porro et fugiat
+                eaque officiis quaerat mollitia cupiditate voluptatum dolorum, iste est quibusdam repellendus commodi
+                voluptatibus pariatur.</p>
+            <button class="button" style="color: white;background-color: red; ">continue reading</button>
+        </div>
+    </div>
+</body>
+
+</html>
